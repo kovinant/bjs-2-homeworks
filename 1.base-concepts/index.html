@@ -1,3 +1,4 @@
+Проект курсовой
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,10 +13,10 @@
   <script src="../Jasmine/jasmine-html.js"></script>
   <script src="../Jasmine/boot.js"></script>
 
-<!-- include source files here... -->
+
 <script type="text/javascript" src="./task.js"></script>
 
-  <!-- include spec files here... -->
+
   <script type="text/javascript" src="./tests.js"></script>
 </head>
 
@@ -26,5 +27,28 @@
     </div>
     <h1 class="header__title">Домашнее задание к лекции 1. «Основные понятия»</h1>
   </header>
+
+    
+    <section class="calculator">
+      <h2>Решение квадратных уравнений</h2>
+      <p>Введите коэффициенты для уравнения <em>ax² + bx + c = 0</em>:</p>
+      <input type="number" id="coef-a" placeholder="Введите a">
+      <input type="number" id="coef-b" placeholder="Введите b">
+      <input type="number" id="coef-c" placeholder="Введите c">
+      <button onclick="solveAndDisplay()">Решить уравнение</button>
+      <div id="result"></div>
+    </section>
+    <section class="mortgage-calculator">
+        <h2>Ипотечный калькулятор</h2>
+        <input type="number" id="mortgage-percent" placeholder="Процентная ставка">
+        <input type="number" id="mortgage-contribution" placeholder="Первоначальный взнос">
+        <input type="number" id="mortgage-amount" placeholder="Сумма кредита">
+        <input type="number" id="mortgage-term" placeholder="Срок кредита в месяцах">
+        <button id="calculate-mortgage">Рассчитать</button>
+        <div id="mortgage-result"></div>
+      </section>
+      
+
+  
 </body>
 </html>
