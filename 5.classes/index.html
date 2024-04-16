@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Классы</title>
-
-  <link rel="shortcut icon" type="image/png" href="../Jasmine/jasmine_favicon.png">
-  <link rel="stylesheet" href="../Jasmine/jasmine.css">
-  <link rel="stylesheet" href="../assets/css/style.css" />
-
-  <script src="../Jasmine/jasmine.js"></script>
-  <script src="../Jasmine/jasmine-html.js"></script>
-  <script src="../Jasmine/boot.js"></script>
-
-<!-- include source files here... -->
-<script type="text/javascript" src="./task.js"></script>
-
-  <!-- include spec files here... -->
-  <script type="text/javascript" src="./tests.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Библиотека и Журнал успеваемости</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="header">
-    <div class="logo__container">
-      <a href="https://netology.ru/" class="logo__link"></a>
-    </div>
-    <h1 class="header__title">Домашнее задание к лекции 5. «Классы»</h1>
-  </header>
-</body>
+<div class="container">
+  <h1>Библиотека</h1>
+  <button id="findBook">Найти книгу "Война и мир"</button>
+  <button id="giveBook">Выдать книгу "Война и мир"</button>
+  <div id="bookOutput" class="output"></div>
 
+  <h1>Журнал успеваемости</h1>
+  <button id="addMark">Добавить оценку по химии</button>
+  <button id="showAverage">Показать среднюю оценку</button>
+  <div id="studentOutput" class="output"></div>
+  <h2>Добавление оценки</h2>
+  <label for="subject">Предмет:</label>
+  <input type="text" id="subject" placeholder="Введите предмет">
+  <label for="mark">Оценка:</label>
+  <input type="number" id="mark" min="2" max="5" placeholder="2-5">
+  <button id="addMarkBtn">Добавить оценку</button>
+</div>
+
+  
+<script src="task.js"></script>
+</body>
 </html>
