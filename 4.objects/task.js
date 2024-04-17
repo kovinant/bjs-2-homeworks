@@ -12,10 +12,7 @@ Student.prototype.setSubject = function (subjectName) {
 Student.prototype.addMarks = function (...marksToAdd) {
   if (this.marks) {
     this.marks.push(...marksToAdd);
-  } else {
-    console.log("Студент отчислен, добавление оценок невозможно");
   }
-}
 
 Student.prototype.getAverage = function () {
   if (!this.marks || this.marks.length === 0) {
